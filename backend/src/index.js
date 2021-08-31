@@ -5,6 +5,8 @@ app.use(express.json());
 
 // http://localhost:3333/projects?title=Node&owner=Aluizio
 
+const projects = [];
+
 app.get('/projects', (request, response) => {
     const { title } = request.query;
 
